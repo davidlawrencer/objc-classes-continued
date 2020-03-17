@@ -11,9 +11,21 @@
 @interface Person : NSObject
 
 //properties age and name
+//getter should be yearsOld
 
+// what does the @property thing literally do?
+// sets up accessors (read/write) - synthesizes a way to get the value of that property, and synthesizes a way to set the value of the property
+// getter -> nameOfVariable
+// setter -> setNameOfVariable
+@property NSString *name;
+//getter -> age
+//setter -> setAge (I want to change this)
+
+//nonatomic vs atomic -> thread-safety
+
+@property (getter=yearsOld) int age;
 //what do we put for a method in the interface?
 // the signature for our function
--(void)popPitch
+-(void)popPitch;
 
 @end

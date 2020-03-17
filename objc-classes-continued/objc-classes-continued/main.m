@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 /*Warmup: Create the interface and implementation for a Person class, which has:
     - a "name" property that is an NSString,
@@ -23,6 +24,16 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
+        // Person is the combo of alloc + init
+        Person *person = [Person new];
+        //literal - it's a shorthand for creating instances of specific objects
+//        NSString *personsName = @"Superman";
+        [person setName: @"Superman"];
+        // setters synthesized in the pattern we expected
+        [person setAge:34];
+        // this getter synthesized from the attributes that we told the property to use (namely, getter = yeardOld)
+        [person yearsOld];
+        [person popPitch];
     }
     return 0;
 }
