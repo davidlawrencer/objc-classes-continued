@@ -35,12 +35,22 @@
 //}
 // new: 
 
-
+// example of overloading init
 -(instancetype)initWithName: (NSString *)name andAge: (int)age {
+    //the superclass's init is always available
     self = [super init];
     // do we want to set properties?
-    name = name;
-    age = age;
+    // because there's no "self" for IVars, I can't distinguish which one I'm talking about here.
+    _name = name;
+    _age = age;
+    return self;
+}
+
+// simple example of overriding
+-(instancetype)init {
+    self = [super init];
+    _name = @"The 2 Man";
+    _age = 3;
     return self;
 }
 
@@ -49,7 +59,7 @@
 
 //although Obj-C makes us use the [message format] for calling methods, with our accessors we can use the dot format for getting/setting them.
 -(void)popPitch {
-    NSLog(@"Hi I'm a person doing my pop pitch... My name is %@ and my age is %d", name, age);
+    NSLog(@"Hi I'm a person doing my pop pitch... My name is %@ and my age is %d", _name, _age);
 }
 
 

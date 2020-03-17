@@ -9,8 +9,8 @@
 //reminder: NSObject gives us the blueprint to initialize and allocate space to a new object that we're creating
 // If i just have this interface, i don't need to know how the implementation actually works!
 @interface Person : NSObject {
-    int age;
-    NSString *name;
+    int _age;
+    NSString *_name;
 }
 
 //properties age and name
