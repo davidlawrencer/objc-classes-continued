@@ -54,10 +54,11 @@ int main(int argc, const char * argv[]) {
         // NSObject's init. Doesn't give _name, or _age, or _stack
 //        Fellow *ericW = [[Fellow alloc] init];
         
-        //Person's init. Will set the _name and _age, but we don't know the stack.
+        //Person's init. Will set the _name and _age, but we don't know the stack. Let's change it
         Fellow *ericW = [[Fellow alloc] initWithName:@"Eric Widjaja" andAge:45 andStack:@"iOS"];
         [ericW whatStack];
         [ericW popPitch];
+        [ericW setIsComfortable:true];
     }
     return 0;
 }

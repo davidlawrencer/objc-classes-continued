@@ -12,10 +12,14 @@
 
 
 @protocol Comfortable <NSObject>
+@required
 
 @property bool isComfortable;
-
 -(void)areYouComfortable;
+
+@optional
+
+@property int sweatLevel;
 
 @end
 

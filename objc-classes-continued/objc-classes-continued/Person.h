@@ -7,12 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Comfortable.h"
 
 // Let's make a protocol for a Person to see if they're Comfortable.
 
 //reminder: NSObject gives us the blueprint to initialize and allocate space to a new object that we're creating
 // If i just have this interface, i don't need to know how the implementation actually works!
-@interface Person : NSObject {
+
+//Comfortable is a protocol. We don't get stubs though?!
+// Oh! That's right... this is the interface. We don't have to implement anything on this protocol, so just like with inherited properties/methods, we don't have to list them out here.
+@interface Person : NSObject <Comfortable> {
     //what were these things called? Instance Variables, or IVars
     int _age;
     NSString *_name;

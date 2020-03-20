@@ -89,4 +89,11 @@ can use b out here
 // can't use b out here
 */
 
+// a property actually synthesizes IVars for that property.
+- (void)areYouComfortable {
+    NSLog(@"I could tell you that, the statement \"I am comfortable\" is %d", isComfortable);
+}
+
+@synthesize isComfortable;
+
 @end

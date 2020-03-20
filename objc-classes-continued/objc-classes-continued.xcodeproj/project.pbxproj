@@ -66,8 +66,8 @@
 			children = (
 				54FF0A64242104C90060EB4C /* main.m */,
 				54FF0A6B2421174B0060EB4C /* Person.h */,
-				54F9E54924251A7C009AB112 /* Comfortable.h */,
 				54FF0A6C242118A80060EB4C /* Person.m */,
+				54F9E54924251A7C009AB112 /* Comfortable.h */,
 				54F9E54624250C99009AB112 /* Fellow.h */,
 				54F9E54724250C99009AB112 /* Fellow.m */,
 			);
