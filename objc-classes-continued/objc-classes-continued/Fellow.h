@@ -7,9 +7,10 @@
 //
 //because Person imports Foundation, we import it here implicitly
 #import "Person.h"
+#import "Employable.h"
 
 // Fellow inherits two inits (one from NSObject and one from Person)
-@interface Fellow : Person {
+@interface Fellow : Person <Employable> {
 // IVar ✅
     // for IVar, remember that we indicate it's private by using an underscore to start the var name
     NSString *_stack;

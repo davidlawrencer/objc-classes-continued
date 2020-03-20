@@ -56,9 +56,11 @@ int main(int argc, const char * argv[]) {
         
         //Person's init. Will set the _name and _age, but we don't know the stack. Let's change it
         Fellow *ericW = [[Fellow alloc] initWithName:@"Eric Widjaja" andAge:45 andStack:@"iOS"];
-        [ericW whatStack];
-        [ericW popPitch];
+//        [ericW whatStack];
+//        [ericW popPitch];
         [ericW setIsComfortable:true];
+        [ericW setIsEmployable:true];
+        [ericW areYouEmployable];
     }
     return 0;
 }

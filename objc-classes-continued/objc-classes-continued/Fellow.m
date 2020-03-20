@@ -10,6 +10,10 @@
 
 @implementation Fellow
 
+//Here we synthesize our property to have a specific IVar, that is different than the one it would provide
+@synthesize isEmployable = _isFellowEmployable;
+
+
 -(instancetype)initWithName:(NSString *)name andAge:(int)age andStack:(NSString *)stack {
     // choice 1 - NSObject init
 //    self = [super init];
@@ -27,5 +31,15 @@
 -(void)whatStack {
     NSLog(@"%@, who is %i, works on the %@ stack",_name, _age, _stack);
 }
+
+- (void)areYouEmployable {
+    NSLog(@" %@ could be employable? Are they? %@ ", _name, (_isFellowEmployable ? @"Yes" : @"No"));
+}
+
+// Protocol stubs include ALL protocols this class conforms to, including those of this class's superclass(es)
+// COULD override our superclass's areYouComfortable
+//- (void)areYouComfortable {
+//}
+
 
 @end
