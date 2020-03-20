@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54F9E54824250C99009AB112 /* Fellow.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F9E54724250C99009AB112 /* Fellow.m */; };
 		54FF0A65242104C90060EB4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FF0A64242104C90060EB4C /* main.m */; };
 		54FF0A6D242118A80060EB4C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FF0A6C242118A80060EB4C /* Person.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		54F9E54624250C99009AB112 /* Fellow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fellow.h; sourceTree = "<group>"; };
+		54F9E54724250C99009AB112 /* Fellow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fellow.m; sourceTree = "<group>"; };
+		54F9E54924251A7C009AB112 /* Comfortable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Comfortable.h; sourceTree = "<group>"; };
 		54FF0A61242104C90060EB4C /* objc-classes-continued */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "objc-classes-continued"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FF0A64242104C90060EB4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		54FF0A6B2421174B0060EB4C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -62,7 +66,10 @@
 			children = (
 				54FF0A64242104C90060EB4C /* main.m */,
 				54FF0A6B2421174B0060EB4C /* Person.h */,
+				54F9E54924251A7C009AB112 /* Comfortable.h */,
 				54FF0A6C242118A80060EB4C /* Person.m */,
+				54F9E54624250C99009AB112 /* Fellow.h */,
+				54F9E54724250C99009AB112 /* Fellow.m */,
 			);
 			path = "objc-classes-continued";
 			sourceTree = "<group>";
@@ -124,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F9E54824250C99009AB112 /* Fellow.m in Sources */,
 				54FF0A6D242118A80060EB4C /* Person.m in Sources */,
 				54FF0A65242104C90060EB4C /* main.m in Sources */,
 			);

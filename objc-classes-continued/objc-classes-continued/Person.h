@@ -6,9 +6,14 @@
 //  Copyright © 2020 David Rifkin. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
+// Let's make a protocol for a Person to see if they're Comfortable.
+
 //reminder: NSObject gives us the blueprint to initialize and allocate space to a new object that we're creating
 // If i just have this interface, i don't need to know how the implementation actually works!
 @interface Person : NSObject {
+    //what were these things called? Instance Variables, or IVars
     int _age;
     NSString *_name;
 }
@@ -33,7 +38,7 @@
 // "id" type and the instancetype "type"
 // id is kind of like Any in swift
 // instancetype is a keyword telling me to expect an object of the type I'm defining/in the definition of.
-// format is yucky, but when we send a message to an object, we aren't quite calling a function BY NAME.
+// format is not great to look at, but when we send a message to an object, we aren't quite calling a function BY NAME. Instead, we're sending a message with certain arguments (here, initWithName and andAge)
 -(instancetype)initWithName: (NSString *)name andAge: (int)age;
 
 

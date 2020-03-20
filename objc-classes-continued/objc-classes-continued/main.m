@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Person.h"
+#import "Fellow.h"
 
 /*Warmup: Create the interface and implementation for a Person class, which has:
     - a "name" property that is an NSString,
@@ -47,9 +48,16 @@ int main(int argc, const char * argv[]) {
         // this getter synthesized from the attributes that we told the property to use (namely, getter = yeardOld)
 //        [person yearsOld]; -> doesn't work without a property
         // to get an instance, we need to alloc space before initing
-        Person *eric = [[Person alloc] initWithName:@"Eric Mei" andAge:25];
+//        Person *eric = [[Person alloc] initWithName:@"Eric Mei" andAge:25];
+//
+//        [eric popPitch];
+        // NSObject's init. Doesn't give _name, or _age, or _stack
+//        Fellow *ericW = [[Fellow alloc] init];
         
-        [eric popPitch];
+        //Person's init. Will set the _name and _age, but we don't know the stack.
+        Fellow *ericW = [[Fellow alloc] initWithName:@"Eric Widjaja" andAge:45 andStack:@"iOS"];
+        [ericW whatStack];
+        [ericW popPitch];
     }
     return 0;
 }

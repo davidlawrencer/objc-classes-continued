@@ -40,9 +40,13 @@
     //the superclass's init is always available
     self = [super init];
     // do we want to set properties?
-    // because there's no "self" for IVars, I can't distinguish which one I'm talking about here.
+    // because there's no "self" for IVars, I can't distinguish which one I'm talking about here if they're named the same thing.
     _name = name;
     _age = age;
+    
+    //If we had a property called height, that synthesized height and setHeight accessors
+//    [self setHeight: (some argument, to this function, maybe an init)];
+    // _age = [self height];
     return self;
 }
 
@@ -54,10 +58,17 @@
     return self;
 }
 
+//other functions can change or use IVars, but the implementation is hidden (encapsulated in this function here)
+//-(void)changeNameTo: (NSString *)name {
+//    _name = name;
+//}
+
+
 //Error: Control reaches end of non-void function
 // ^^ have to return something!
 
 //although Obj-C makes us use the [message format] for calling methods, with our accessors we can use the dot format for getting/setting them.
+
 -(void)popPitch {
     NSLog(@"Hi I'm a person doing my pop pitch... My name is %@ and my age is %d", _name, _age);
 }
